@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script src="js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/cec8e0eed3.js" crossorigin="anonymous" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <title>ED(W) Dashboard</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-img"><img src="images/logo.svg.png" alt="Logo"></div>
+      <div class="logo-text">ED(W) Dashboard</div>
+    </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <ul class="nav-menu nav-menu-sidebar">
+      <li><a href="index.html"><i class="fas fa-industry"></i><span>Production</span></a></li>
+      <li><a href="rawMaterial.html"><i class="fas fa-solid fa-dolly"></i></i><span>Raw Materials</span></a></li>
+      <li><a href="#"><i class="fas fa-solid fa-flask"></i><span>Projects</span></a></li>
+      <li><a href="#"><i class="fas fa-solid fa-dollar-sign"></i><span>Finance</span></a></li>
+      <li><a href="safety.html"><i class="fas fa-solid fa-user-shield"></i><span>Safety</span></a></li>
+      <li><a href="mm.html"><i class="fas fa-solid fa-recycle"></i><span>MM</span></a></li>
+      <li><a href="#"><i class="fas fa-solid fa-bell"></i><span>Issues</span></a></li>
+      <li><a href="#"><i class="fas fa-solid fa-bell"></i><span>Logout</span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="title">कच्चा माल / Raw Materials as on 2023-05-16</div>
+    
+    <div class="tables">
+
+      <table id="rawMaterialTable1">
+        <thead>
+          <tr class="table-title">
+            <th colspan="100%">कोकिंग कोल / Coaking Coal(COB#10)<th>
+          </tr>
+            <tr>
+                <th class="table-col-title" rowspan="2">Coal Type</th>
+                <th class="table-col-title" rowspan="2">Coal Blend(%)</th>
+                <th class="table-col-title" rowspan="1" colspan="2">Recieved</th>
+                <th class="table-col-title" rowspan="1" colspan="2">Stock</th>
+                <th class="table-col-title" rowspan="1" colspan="2">Stock Level</th>
+            </tr>
+            <tr>
+                <th>Till Date</th>
+                <th>On Date</th>
+                <th colspan="1">As on 1<sup>st</sup>[T]</th>
+                <th colspan="1">On Date[T]</th>
+                <th>Days</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be dynamically added here -->
+            <!-- <tr><td>AUS-Hard</td><td>43</td><td>0</td><td>15033</td><td>9150</td><td>10000</td><td>14</td></tr> -->
+        </tbody>
+    </table>
+
+    <table id="rawMaterialTable2">
+      <thead>
+        <tr class="table-title">
+          <th colspan="100%">कोकिंग कोल / Coaking Coal(COB#11)<th>
+        </tr>
+          <tr>
+              <th class="table-col-title" rowspan="2">Coal Type</th>
+              <th class="table-col-title" rowspan="2">Coal Blend(%)</th>
+              <th class="table-col-title" rowspan="1" colspan="2">Recieved</th>
+              <th class="table-col-title" rowspan="1" colspan="2">Stock</th>
+              <th class="table-col-title" rowspan="1" colspan="2">Stock Level</th>
+          </tr>
+          <tr>
+              <th>Till Date</th>
+              <th>On Date</th>
+              <th colspan="1">As on 1<sup>st</sup>[T]</th>
+              <th colspan="1">On Date[T]</th>
+              <th>Days</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Table rows will be dynamically added here -->
+          <!-- <tr><td>AUS-Hard</td><td>43</td><td>0</td><td>15033</td><td>9150</td><td>10000</td><td>14</td></tr> -->
+      </tbody>
+  </table>
+
+  <table id="rawMaterialTable3">
+    <thead>
+      <tr class="table-title">
+        <th colspan="100%">अन्य कच्चे माल / Other Raw Materials <th>
+      </tr>
+        <tr>
+            <th class="table-col-title" rowspan="2">Raw Material</th>
+            <th class="table-col-title" rowspan="1" colspan="2">Recieved</th>
+            <th class="table-col-title" rowspan="1" colspan="2">Stock</th>
+            <th class="table-col-title" rowspan="1" colspan="2">Stock Level</th>
+        </tr>
+        <tr>
+            <th>Till Date</th>
+            <th>On Date</th>
+            <th colspan="1">As on 1<sup>st</sup>[T]</th>
+            <th colspan="1">On Date[T]</th>
+            <th>Days</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Table rows will be dynamically added here -->
+        <!-- <tr><td>AUS-Hard</td><td>43</td><td>0</td><td>15033</td><td>9150</td><td>10000</td><td>14</td></tr> -->
+    </tbody>
+</table>
+
+<table id="rawMaterialTable4">
+  <thead>
+    <tr class="table-title">
+      <th colspan="100%">गुणवत्ता / Quality<th>
+    </tr>
+  </thead>
+  <tbody>
+      <!-- Table rows will be dynamically added here -->
+      <!-- <tr><td>AUS-Hard</td><td>43</td><td>0</td><td>15033</td><td>9150</td><td>10000</td><td>14</td></tr> -->
+  </tbody>
+</table>
+
+    </div>
+    
+  </main>
+
+  <footer>
+    Developed by Computers &amp; Information Technology Department
+  </footer>
+
+  <script>
+    //RawMayterial Table 1
+    window.addEventListener('DOMContentLoaded', () => {
+    fetch('csv/rawMaterial1.csv') // Change the file name if necessary
+      .then(response => response.text())
+      .then(data => {
+          const rows = data.split('\n');
+          const tableBody = document.querySelector('#rawMaterialTable1 tbody');
+
+          for (let i = 0; i < rows.length-1; i++) {
+              const rowData = rows[i].split(',');
+              const row = document.createElement('tr');
+
+              for (let j = 0; j < rowData.length; j++) {
+                  const cell = document.createElement('td');
+                  cell.textContent = rowData[j];
+                  row.appendChild(cell);
+              }
+              tableBody.appendChild(row);
+          }
+      })
+      .catch(error => console.log(error));
+    });
+
+    //RawMayterial Table 2
+    window.addEventListener('DOMContentLoaded', () => {
+    fetch('csv/rawMaterial2.csv') // Change the file name if necessary
+      .then(response => response.text())
+      .then(data => {
+          const rows = data.split('\n');
+          const tableBody = document.querySelector('#rawMaterialTable2 tbody');
+
+          for (let i = 0; i < rows.length-1; i++) {
+              const rowData = rows[i].split(',');
+              const row = document.createElement('tr');
+
+              for (let j = 0; j < rowData.length; j++) {
+                  const cell = document.createElement('td');
+                  cell.textContent = rowData[j];
+                  row.appendChild(cell);
+              }
+              tableBody.appendChild(row);
+          }
+      })
+      .catch(error => console.log(error));
+    });
+
+    //RawMayterial Table 3
+    window.addEventListener('DOMContentLoaded', () => {
+    fetch('csv/rawMaterial3.csv') // Change the file name if necessary
+      .then(response => response.text())
+      .then(data => {
+          const rows = data.split('\n');
+          const tableBody = document.querySelector('#rawMaterialTable3 tbody');
+
+          for (let i = 0; i < rows.length-1; i++) {
+              const rowData = rows[i].split(',');
+              const row = document.createElement('tr');
+
+              for (let j = 0; j < rowData.length; j++) {
+                  const cell = document.createElement('td');
+                  cell.textContent = rowData[j];
+                  row.appendChild(cell);
+              }
+              tableBody.appendChild(row);
+          }
+      })
+      .catch(error => console.log(error));
+    });
+
+
+    //RawMayterial Table 4
+    window.addEventListener('DOMContentLoaded', () => {
+    fetch('csv/rawMaterial4.csv') // Change the file name if necessary
+      .then(response => response.text())
+      .then(data => {
+          const rows = data.split('\n');
+          const tableBody = document.querySelector('#rawMaterialTable4 tbody');
+
+          for (let i = 0; i < rows.length-1; i++) {
+              const rowData = rows[i].split(',');
+              const row = document.createElement('tr');
+
+              for (let j = 0; j < rowData.length; j++) {
+                  const cell = (i === 0||i==4||i==7||i==9) ? document.createElement('th') : document.createElement('td'); // Condition to create <th> or <td> element
+                    cell.textContent = rowData[j];
+                    if((i==7||i==9)&&(j==0)){cell.setAttribute('rowspan','2');}
+                  row.appendChild(cell);
+              }
+
+              if (i === 0||i==4||i==7||i==9) { // Example: Assign class to the third row (index 2)
+                row.classList.add('table-col-title'); // Add your desired class name
+              }
+              
+
+              tableBody.appendChild(row);
+          }
+      })
+      .catch(error => console.log(error));
+});
+  </script>
+</body>
+</html>
+<!-- 
+  r 3.2.2
+  rails
+ -->

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Materials Management Dashboard</title>
+    <style>
+        @media(max-width:768px){
+            .middle_part{
+                height: 84vh;
+                padding: 0;
+                margin: 0;
+            }
+            .mm_container{
+                width: 100%;
+                height: 84vh;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+            }
+            .accordian_menu{
+                width: 100%;
+                height: auto;
+                
+            }
+            .menu_content{
+                width: 100%;
+            }
+            .mm_span{
+                font-size: 1.7rem;
+            }
+            .mm_tables{
+                width: 100%;
+            }
+            .mmTable{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <div class="logo-img"><img src="images/logo.svg.png" alt="Logo"></div>
+          <div class="logo-text">ED(W) Dashboard</div>
+        </div>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+        <ul class="nav-menu nav-menu-sidebar">
+          <li><a href="index.html"><i class="fas fa-industry"></i><span>Production</span></a></li>
+          <li><a href="rawMaterial.html"><i class="fas fa-solid fa-dolly"></i></i><span>Raw Materials</span></a></li>
+          <li><a href="#"><i class="fas fa-solid fa-flask"></i><span>Projects</span></a></li>
+          <li><a href="#"><i class="fas fa-solid fa-dollar-sign"></i><span>Finance</span></a></li>
+          <li><a href="safety.html"><i class="fas fa-solid fa-user-shield"></i><span>Safety</span></a></li>
+          <li><a href="mm.html"><i class="fas fa-solid fa-recycle"></i><span>MM</span></a></li>
+          <li><a href="#"><i class="fas fa-solid fa-bell"></i><span>Issues</span></a></li>
+          <li><a href="#"><i class="fas fa-solid fa-bell"></i><span>Logout</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="middle_part">
+
+        <div class="mm_container">
+
+            <div class="mm_title">
+                <span class="mm_title_txt"><b>Materials Management Dashboard</b></span>
+            </div>
+
+            <div class="content">
+
+                <div class="accordian_menu">
+                    
+                    <div class="menu_title">
+                        <div class="menu_title_txt">FISCAL</div>
+                        <div class="menu_title_dropdown">
+                            <select>
+                                <option value="2022">2022-23</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <!-- Add more years as needed -->
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        
+                        <div class="accordion-item">
+                          <div class="accordion-header">MM-Major Parameter<span class="accordion-arrow"></span></div>
+                          <div class="accordion-content">
+                                <li class="mm_li" data-table="mm_table1">Major MM Parameter</li>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                          <div class="accordion-header">Order Value<span class="accordion-arrow"></span></div>
+                          <div class="accordion-content">
+                                <li class="mm_li" data-table="mm_table2">Order Value(Material Procurement)</li>
+                                <li class="mm_li" data-table="mm_table3">Order Value(Works Contract)</li>
+                                <li class="mm_li" data-table="mm_table4">Order Value(Non-Works Contract)</li>
+                                <li class="mm_li" data-table="mm_table5">Order Value(Project Material)</li>
+                                <li class="mm_li" data-table="mm_table6">Order Value(Project Contract)</li>
+                          </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <div class="accordion-header">Lead Time<span class="accordion-arrow"></span></div>
+                            <div class="accordion-content">
+                                <li class="mm_li" data-table="mm_table7">Frequency Distribution (Material Procurement)</li>
+                                <li class="mm_li" data-table="mm_table8">Frequency Distribution (Works Contract)</li>
+                                <li class="mm_li" data-table="mm_table9">Frequency Distribution (Non-Works Contract)</li>
+                                <li class="mm_li" data-table="mm_table10">Frequency Distribution (Project Material)</li>
+                                <li class="mm_li" data-table="mm_table11">Frequency Distribution (Project Contract)</li>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="menu_content">
+                    <div class="menu_cntnt_title">
+                        <div class="mm_tables">
+                            
+                            <div class="mm_table1">
+                                <span class="mm_span">Major MM ERP Parameters,Fiscal 2022</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td class="mm_td">Inventory</td>                     <td class="mm_td">393.91</td> <td class="mm_td">0.00</td>  <td class="mm_td">371.38</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Non Moving Inventory</td>          <td class="mm_td">22.73</td>  <td class="mm_td">0.00</td>  <td class="mm_td">29.25</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Slow Moving Inventory</td>         <td class="mm_td">19.29</td>  <td class="mm_td">0.00</td>  <td class="mm_td">0.00</td>    </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">SOR Inventory</td>                 <td class="mm_td">7.61</td>   <td class="mm_td">0.00</td>  <td class="mm_td">9.75</td>    </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Insurance Item Capitalised</td>    <td class="mm_td">85.35</td>  <td class="mm_td">0.00</td>  <td class="mm_td">99.35</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Insurance Item Not Capitalised</td><td class="mm_td">29.02</td>  <td class="mm_td">0.00</td>  <td class="mm_td">29.96</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">MOCOS</td>                         <td class="mm_td">7.7</td>    <td class="mm_td">0.00</td>  <td class="mm_td">8.2</td>     </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Consumption of Stores & Spares</td><td class="mm_td">648.11</td> <td class="mm_td">33.20</td> <td class="mm_td">544.74</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Receipt of Stores & Spares</td>    <td class="mm_td">677.68</td> <td class="mm_td">74.84</td> <td class="mm_td">524.05</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total MM Procurement Value</td>    <td class="mm_td">1978.53</td><td class="mm_td">143.29</td><td class="mm_td">1644.31</td> </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Procurement on MSE</td>            <td class="mm_td">228.59</td> <td class="mm_td">33.87</td> <td class="mm_td">539.91</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Procurement on SC/ST MSE</td>      <td class="mm_td">3.51</td>   <td class="mm_td">0.00</td>  <td class="mm_td">0.22</td>    </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Procurement on Women MSE</td>      <td class="mm_td">5.32</td>   <td class="mm_td">0.31</td>  <td class="mm_td">6.81</td>    </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Avg PR to PO Lead Time(in Day)</td><td class="mm_td">40</td>     <td class="mm_td">0.00</td>  <td class="mm_td">48</td>      </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">GEM Procurement</td>               <td class="mm_td">989.88</td> <td class="mm_td">57.93</td> <td class="mm_td">700.70</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total Cotact Value WORKS</td>      <td class="mm_td">229.56</td> <td class="mm_td">14.33</td> <td class="mm_td">238.42</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total Cotact Value N-WORKS</td>    <td class="mm_td">30.72</td>  <td class="mm_td">0.32</td>  <td class="mm_td">23.65</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Project Material Procurement</td>  <td class="mm_td">115.37</td> <td class="mm_td">0.01</td>  <td class="mm_td">36.42</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Project Contact Procurement</td>   <td class="mm_td">196.34</td> <td class="mm_td">8.02</td>  <td class="mm_td">116.07</td>  </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table2">
+                                <span class="mm_span">Order Value (Material Procurement) :- Fiscal 2022</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td class="mm_td">Centralised Procurement</td>      <td class="mm_td">135.95</td> <td class="mm_td">0.11</td>  <td class="mm_td">211.07</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Global Tender Enquiry</td>        <td class="mm_td">8.48</td>   <td class="mm_td">0.00</td>  <td class="mm_td">28.11</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Govt. e-Marketplace</td>          <td class="mm_td">989.88</td> <td class="mm_td">57.93</td> <td class="mm_td">700.70</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Inter Plant Transfer</td>         <td class="mm_td">194.35</td> <td class="mm_td">22.22</td> <td class="mm_td">183.94</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Limited Tender Enquiry</td>       <td class="mm_td">151.45</td> <td class="mm_td">8.86</td>  <td class="mm_td">96.07</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Memorandum of Understanding</td>  <td class="mm_td">141.33</td> <td class="mm_td">0.00</td>  <td class="mm_td">154.80</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Open Tender Enquiry</td>          <td class="mm_td">130.15</td> <td class="mm_td">1.22</td>  <td class="mm_td">110.94</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Rate Contract</td>                <td class="mm_td">37.67</td>  <td class="mm_td">0.50</td>  <td class="mm_td">25.52</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Repeat Order</td>                 <td class="mm_td">71.26</td>  <td class="mm_td">48.53</td> <td class="mm_td">48.69</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Single Tender Nor-Proprietary</td><td class="mm_td">40.31</td>  <td class="mm_td">0.18</td>  <td class="mm_td">11.75</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Single Tender Proprietary</td>    <td class="mm_td">77.69</td>  <td class="mm_td">3.75</td>  <td class="mm_td">72.70</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total</td>                        <td class="mm_td">1978.52</td><td class="mm_td">143.30</td><td class="mm_td">1644.29</td> </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table3">
+                                <span class="mm_span">Order value(Works Contract),Fiscal:20222</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr cllass="mm_tr"> <td class="mm_td">Limited Tender Enquiry</td>       <td class="mm_td">37.23</td>  <td calss="mm_td">3.36</td>  <td class="mm_td">62.30</td>  </tr>
+                                        <tr cllass="mm_tr"> <td class="mm_td">Order Tender Enquiry</td>         <td class="mm_td">174.34</td> <td calss="mm_td">9.31</td>  <td class="mm_td">160.48</td> </tr>
+                                        <tr cllass="mm_tr"> <td class="mm_td">Rate Contract</td>                <td class="mm_td">1.96</td>   <td calss="mm_td">0.00</td>  <td class="mm_td">0.03</td>   </tr>
+                                        <tr cllass="mm_tr"> <td class="mm_td">repeat Order</td>                 <td class="mm_td">1.57</td>   <td calss="mm_td">0.00</td>  <td class="mm_td">0.00</td>   </tr>
+                                        <tr cllass="mm_tr"> <td class="mm_td">Single Tender Non-Proprietary</td><td class="mm_td">6.00</td>   <td calss="mm_td">0.71</td>  <td class="mm_td">6.51</td>   </tr>
+                                        <tr cllass="mm_tr"> <td class="mm_td">Single Tender Proprietary</td>    <td class="mm_td">8.44</td>   <td calss="mm_td">0.94</td>  <td class="mm_td">6.88</td>   </tr>
+                                        <tr cllass="mm_tr"> <td class="mm_td">Total</td>                        <td class="mm_td">229.54</td> <td calss="mm_td">14.32</td> <td class="mm_td">236.20</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table4">
+                                <span class="mm_span">Order value(Non-Works Contract),Fiscal:20222</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td>Govt. e-Marketplace</td>           <td class="mm_td">2.48</td>   <td class="mm_td">0.00</td>  <td class="mm_td">7.72</td>  </tr>
+                                        <tr class="mm_tr"> <td>Limited Tender Enquiry</td>        <td class="mm_td">5.05</td>   <td class="mm_td">0.00</td>  <td class="mm_td">0.29</td>  </tr>
+                                        <tr class="mm_tr"> <td>Open Tender Enquiry</td>           <td class="mm_td">15.60</td>  <td class="mm_td">0.01</td>  <td class="mm_td">2.22</td>  </tr>
+                                        <tr class="mm_tr"> <td>Single Tender Non-Proprietary</td> <td class="mm_td">0.00</td>   <td class="mm_td">0.00</td>  <td class="mm_td">0.03</td>  </tr>
+                                        <tr class="mm_tr"> <td>Single Tender Proprietary</td>     <td class="mm_td">92.25</td>  <td class="mm_td">0.00</td>  <td class="mm_td">25.93</td> </tr>
+                                        <tr class="mm_tr"> <td>Total</td>                         <td class="mm_td">115.38</td> <td class="mm_td">0.01</td>  <td class="mm_td">36.19</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table5">
+                                <span class="mm_span">Order Value(Project Material),Fiscal :2022</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td>Limited Tender Enquiry</td>       <td class="mm_td">1.88</td> <td class="mm_td">0.29</td>  <td class="mm_td">4.86</td>  </tr>
+                                        <tr class="mm_tr"> <td>Orderer Tender Enquiry</td>       <td class="mm_td">18.37</td><td class="mm_td">0.04</td>  <td class="mm_td">14.56</td> </tr>
+                                        <tr class="mm_tr"> <td>Rate Contract</td>                <td class="mm_td">3.78</td> <td class="mm_td">0.00</td>  <td class="mm_td">0.00</td>   </tr>
+                                        <tr class="mm_tr"> <td>Repeat Order</td>                 <td class="mm_td">0.39</td> <td class="mm_td">0.00</td>  <td class="mm_td">1.02</td>   </tr>
+                                        <tr class="mm_tr"> <td>Single Tender Non-Proprietary</td><td class="mm_td">6.10</td> <td class="mm_td">0.00</td>  <td class="mm_td">2.74</td>   </tr>
+                                        <tr class="mm_tr"> <td>Single Tender Proprietary</td>    <td class="mm_td">0.21</td> <td class="mm_td">0.00</td>  <td class="mm_td">0.48</td>   </tr>
+                                        <tr class="mm_tr"> <td>Total</td>                        <td class="mm_td">30.73</td><td class="mm_td">0.33</td>  <td class="mm_td">23.66</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table6">
+                                <span class="mm_span">Order Value(Project Contract),Fiscal:20222</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td class="mm_td">Limited Tender Enquiry</td>        <td class="mm_td">1.05</td>  <td class="mm_td">0.00</td>  <td class="mm_td">14.36</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Open Tender Enquiry</td>           <td class="mm_td">169.98</td><td class="mm_td">2.63</td>  <td class="mm_td">82.75</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Single Tender Non-Proprietary</td> <td class="mm_td">0.00</td>  <td class="mm_td">0.00</td>  <td class="mm_td">3.32</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Single Tender Proprietary</td>     <td class="mm_td">25.30</td> <td class="mm_td">5.39</td>  <td class="mm_td">15.63</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total</td>                         <td class="mm_td">196.33</td><td class="mm_td">8.02</td>  <td class="mm_td">116.06</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table7">
+                                <span class="mm_span">Frequency Distribution(Material Procurement),Fiscal:20222</span>
+                                <table class="mmTable">
+                                    <thead calss="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td class="mm_td">&lt;=30</td>         <td class="mm_td">1557</td> <td class="mm_td">245</td> <td class="mm_td">1961</td> </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=31 &lt;=60</td> <td class="mm_td">1438</td> <td class="mm_td">75</td>  <td class="mm_td">1716</td> </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=61 &lt;=90</td> <td class="mm_td">560</td>  <td class="mm_td">25</td>  <td class="mm_td">666</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=91 &lt;=150</td><td class="mm_td">236</td>  <td class="mm_td">24</td>  <td class="mm_td">439</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;150</td>         <td class="mm_td">57</td>   <td class="mm_td">4</td>   <td class="mm_td">146</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total</td>           <td class="mm_td">3848</td> <td class="mm_td">373</td> <td class="mm_td">4928</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table8">
+                                <span class="mm_span">Frequency Distribution(Works Contract),Fiscal:20222</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td class="mm_td">&lt;=30</td>         <td class="mm_td">19</td>   <td class="mm_td">2</td>   <td calss="mm_td">25</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=31 &lt;=60</td> <td class="mm_td">81</td>   <td class="mm_td">5</td>   <td calss="mm_td">24</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=61 &lt;=90</td> <td class="mm_td">146</td>  <td class="mm_td">26</td>  <td calss="mm_td">113</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=91 &lt;=150</td><td class="mm_td">105</td>  <td class="mm_td">11</td>  <td calss="mm_td">201</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;150</td>         <td class="mm_td">34</td>   <td class="mm_td">7</td>   <td calss="mm_td">112</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total</td>           <td class="mm_td">3848</td> <td class="mm_td">373</td> <td calss="mm_td">475</td>  </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table9">
+                                <span class="mm_span">Frequency Distribution(Non-Works Contract),Fiscal:20222</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td class="mm_td">&lt;=30</td>         <td class="mm_td">0</td>  <td class="mm_td">0</td> <td calss="mm_td">5</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=31 &lt;=60</td> <td class="mm_td">1</td>  <td class="mm_td">0</td> <td calss="mm_td">10</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=61 &lt;=90</td> <td class="mm_td">6</td>  <td class="mm_td">0</td> <td calss="mm_td">19</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=91 &lt;=150</td><td class="mm_td">12</td> <td class="mm_td">0</td> <td calss="mm_td">56</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;150</td>         <td class="mm_td">29</td> <td class="mm_td">1</td> <td calss="mm_td">23</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total</td>           <td class="mm_td">48</td> <td class="mm_td">1</td> <td calss="mm_td">113</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table10">
+                                <span class="mm_span">Frequency Distribution(Project Material),Fiscal:20222</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="mm_tr"> <td class="mm_td">&lt;=30</td>         <td class="mm_td">50</td>  <td class="mm_td">0</td>  <td calss="mm_td">59</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=31 &lt;=60</td> <td class="mm_td">5</td>   <td class="mm_td">0</td>  <td calss="mm_td">6</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=61 &lt;=90</td> <td class="mm_td">4</td>   <td class="mm_td">0</td>  <td calss="mm_td">9</td>   </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;=91 &lt;=150</td><td class="mm_td">30</td>  <td class="mm_td">3</td>  <td calss="mm_td">14</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">&gt;150</td>         <td class="mm_td">26</td>  <td class="mm_td">2</td>  <td calss="mm_td">19</td>  </tr>
+                                        <tr class="mm_tr"> <td class="mm_td">Total</td>           <td class="mm_td">115</td> <td class="mm_td">5</td>  <td calss="mm_td">107</td> </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="mm_table11">
+                                <span class="mm_span">Frequency Distribution(Project Contract),Fiscal:20222</span>
+                                <table class="mmTable">
+                                    <thead class="mm_thead">
+                                        <th class="mm_th">Parameters</th> <th class="mm_th">2022-23</th> <th class="mm_th">May-2022</th> <th class="mm_th">2021-2022</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr calss="mm_tr"> <td class="mm_td">&lt;=30</td>         <td class="mm_td">4</td>  <td class="mm_td">2</td> <td calss="mm_td">6</td>   </tr>
+                                        <tr calss="mm_tr"> <td class="mm_td">&gt;=31 &lt;=60</td> <td class="mm_td">0</td>  <td class="mm_td">0</td> <td calss="mm_td">3</td>   </tr>
+                                        <tr calss="mm_tr"> <td class="mm_td">&gt;=61 &lt;=90</td> <td class="mm_td">4</td>  <td class="mm_td">1</td> <td calss="mm_td">3</td>   </tr>
+                                        <tr calss="mm_tr"> <td class="mm_td">&gt;=91 &lt;=150</td><td class="mm_td">8</td>  <td class="mm_td">1</td> <td calss="mm_td">23</td>  </tr>
+                                        <tr calss="mm_tr"> <td class="mm_td">&gt;150</td>         <td class="mm_td">36</td> <td class="mm_td">1</td> <td calss="mm_td">11</td>  </tr>
+                                        <tr calss="mm_tr"> <td class="mm_td">Total</td>           <td class="mm_td">52</td> <td class="mm_td">5</td> <td calss="mm_td">46</td>  </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+      </div>
+
+      <footer>
+        Developed by Computers &amp; Information Technology Department
+      </footer>  
+  
+    <script src="https://kit.fontawesome.com/cec8e0eed3.js" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script>
+        
+    //Accordian collapsing and expanding feature
+
+
+
+    // Get all accordion headers
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    // Add click event listener to each accordion header
+    accordionHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+    // Toggle the display of accordion content
+    const accordionContent = header.nextElementSibling;
+    accordionContent.style.display = (accordionContent.style.display === 'block') ? 'none' : 'block';
+
+    // Rotate the arrow icon
+    const arrowIcon = header.querySelector('.accordion-arrow');
+    header.classList.toggle('active');
+
+    // Collapse other accordion headers
+    accordionHeaders.forEach(otherHeader => {
+      if (otherHeader !== header) {
+        const otherAccordionContent = otherHeader.nextElementSibling;
+        otherAccordionContent.style.display = 'none';
+        otherHeader.classList.remove('active');
+      }
+    });
+  });
+});
+
+
+
+
+
+    // Get all accordion list items
+    const mmLiItems = document.querySelectorAll('.mm_li');
+
+    // Add click event listener to each list item
+    mmLiItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Access the data-table attribute value
+        const dataTable = item.dataset.table;
+        console.log(dataTable); // You can perform further actions with the selected table value
+    });
+    });
+
+        
+
+        // Show corresponding table when clicked from accordian menu
+        
+        // Get all li elements with class "mm_li"
+        const liElements = document.querySelectorAll('.mm_li');
+
+        // Get all tables with class "mm_tables"
+        const tableElements = document.querySelectorAll('.mm_tables > div');
+
+        // Hide all tables except the first one
+        tableElements.forEach((table, index) => {
+        if (index !== 0) {
+            table.style.display = 'none';
+        }
+        });
+
+        // Add event listener to each li element
+        liElements.forEach((li) => {
+        li.addEventListener('click', () => {
+            // Get the data-table attribute value of the clicked li element
+            const selectedTable = li.getAttribute('data-table');
+
+            // Toggle the visibility of the corresponding table
+            tableElements.forEach((table) => {
+            if (table.classList.contains(selectedTable)) {
+                table.style.display = 'block';
+            } else {
+                table.style.display = 'none';
+            }
+            });
+        });
+        });
+
+  </script>
+</body>
+</html>

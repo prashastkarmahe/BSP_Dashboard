@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <title>ED(W) Dashboard</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-img"><img src="images/logo.svg.png" alt="Logo"></div>
+      <div class="logo-text">ED(W) Dashboard</div>
+    </div>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <ul class="nav-menu nav-menu-sidebar">
+      <li><a href="#"><i class="fas fa-industry"></i><span>Production</span></a></li>
+      <li><a href="rawMaterial.html"><i class="fas fa-solid fa-dolly"></i></i><span>Raw Materials</span></a></li>
+      <li><a href="#"><i class="fas fa-solid fa-flask"></i><span>Projects</span></a></li>
+      <li><a href="#"><i class="fas fa-solid fa-dollar-sign"></i><span>Finance</span></a></li>
+      <li><a href="safety.html"><i class="fas fa-solid fa-user-shield"></i><span>Safety</span></a></li>
+      <li><a href="mm.html"><i class="fas fa-solid fa-recycle"></i><span>MM</span></a></li>
+      <li><a href="#"><i class="fas fa-solid fa-bell"></i><span>Issues</span></a></li>
+      <li><a href="#"><i class="fas fa-solid fa-bell"></i><span>Logout</span></a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="title">उत्पदान, प्रेषण एवं तकनीकि मापदंड / Production, Dispatch and Techno as on 20123-03-28</div>
+    
+    <div class="tables">
+
+      <table>
+        <thead>
+          <tr class="table-title">
+            <th colspan="100%">Production Planning & Control</th>
+          </tr>
+          <tr class="table-col-title">
+            <th rowspan="2">PRODUCTION</th>
+            <th>ABP</th>
+            <th>PLAN</th>
+            <th colspan="2">On Date</th>
+            <th rowspan="2">Cum. Till Date</th>
+            <th rowspan="2">Monthly Rate</th>
+            <th rowspan="2">Yearly Cum('000T)</th>
+            <th rowspan="2">Mar 2023</th>
+            <th rowspan="2">Apr 2022</th>
+            <th rowspan="2">Best Apr</th>
+            <th rowspan="2">Best Month</th>
+            <th colspan="2">%fulfill. wrt</th>
+            <th rowspan="2">Reqd/C.day for ABP</th>
+          </tr>
+          <tr class="table-col-title">
+            <th colspan="2">(In' 000 T)</th>
+            <th>Plan</th>
+            <th>Act</th>
+            <th>ABP</th>
+            <th>PLAN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="expand1">
+            <td><strong style="color: green">+</strong> BF COKE</td>
+            <td>268</td>
+            <td>268</td>
+            <td>9020</td>
+            <td>8974</td>
+            <td>89169</td>
+            <td>267500</td>
+            <td>89.2</td>
+            <td>278296</td>
+            <td>246379</td>
+            <td>266826</td>
+            <td>278296</td>
+            <td>99.8</td>
+            <td>99.8</td>
+            <td>8942</td>
+          </tr>
+          <tr class="collapse1 hide">
+            <td>CO Batt: 1 to 8</td>
+            <td></td>
+            <td></td>
+            <td>372</td>
+            <td>376</td>
+            <td>374</td>
+            <td>374</td>
+            <td></td>
+            <td>377</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="collapse1 hide">
+            <td>CO Batt: 9 to 11</td>
+            <td></td>
+            <td></td>
+            <td>237</td>
+            <td>238</td>
+            <td>237</td>
+            <td>237</td>
+            <td></td>
+            <td>237</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="collapse1 hide">
+            <td>EQV Pushing</td>
+            <td>800</td>
+            <td>800</td>
+            <td>800</td>
+            <td>806</td>
+            <td>801</td>
+            <td>801</td>
+            <td></td>
+            <td>806</td>
+            <td>737</td>
+            <td>779</td>
+            <td>814</td>
+            <td>100.1</td>
+            <td>100.1</td>
+            <td>23879</td>
+          </tr>
+
+          <tr id="expand2">
+            <td><strong style="color: green">+</strong>Total SINTER</td>
+            <td>703</td>
+            <td>703</td>
+            <td>18200</td>
+            <td>17040</td>
+            <td>225427</td>
+            <td>694400</td>
+            <td>225.4</td>
+            <td>759729</td>
+            <td>652406</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+          <tr class="collapse2 hide">
+            <td>SINTER SP-2</td>
+            <td>703</td>
+            <td>703</td>
+            <td>18200</td>
+            <td>17040</td>
+            <td>225427</td>
+            <td>694400</td>
+            <td>225.4</td>
+            <td>759729</td>
+            <td>652406</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+          <tr class="collapse2 hide">
+            <td>SINTER SP-3</td>
+            <td>703</td>
+            <td>703</td>
+            <td>18200</td>
+            <td>17040</td>
+            <td>225427</td>
+            <td>694400</td>
+            <td>225.4</td>
+            <td>759729</td>
+            <td>652406</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+
+          <tr id="expand3">
+            <td><strong style="color: green">+</strong> Total Hot Metal</td>
+            <td>511</td>
+            <td>511</td>
+            <td>16000</td>
+            <td>16210</td>
+            <td>260990</td>
+            <td>482900</td>
+            <td>161.0</td>
+            <td>545752</td>
+            <td>414297</td>
+            <td>471265</td>
+            <td>554334</td>
+            <td>94.5</td>
+            <td>94.5</td>
+            <td>17501</td>
+          </tr>
+          <tr class="collapse3 hide">
+            <td>H M BF-1 to 7</td>
+            <td>703</td>
+            <td>703</td>
+            <td>18200</td>
+            <td>17040</td>
+            <td>225427</td>
+            <td>694400</td>
+            <td>225.4</td>
+            <td>759729</td>
+            <td>652406</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+          <tr class="collapse3 hide">
+            <td>H M BF-8</td>
+            <td>703</td>
+            <td>703</td>
+            <td>18200</td>
+            <td>17040</td>
+            <td>225427</td>
+            <td>694400</td>
+            <td>225.4</td>
+            <td>759729</td>
+            <td>652406</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+
+          <tr id="expand4">
+            <td><strong style="color: green">+</strong> Total CR STEEL</td>
+            <td>511</td>
+            <td>511</td>
+            <td>16000</td>
+            <td>16210</td>
+            <td>260990</td>
+            <td>482900</td>
+            <td>161.0</td>
+            <td>545752</td>
+            <td>414297</td>
+            <td>471265</td>
+            <td>554334</td>
+            <td>94.5</td>
+            <td>94.5</td>
+            <td>17501</td>
+          </tr>
+          <tr class="collapse4 hide">
+            <td>Cr Steel SMS-2</td>
+            <td>703</td>
+            <td>703</td>
+            <td>18200</td>
+            <td>17040</td>
+            <td>225427</td>
+            <td>694400</td>
+            <td>225.4</td>
+            <td>759729</td>
+            <td>652406</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+          <tr class="collapse4 hide">
+            <td>Cr Steel SMS-3</td>
+            <td>703</td>
+            <td>703</td>
+            <td>18200</td>
+            <td>17040</td>
+            <td>225427</td>
+            <td>694400</td>
+            <td>225.4</td>
+            <td>759729</td>
+            <td>652406</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+
+          <tr id="expand5">
+            <td><strong style="color: green">+</strong> Total R&M Fin.</td>
+            <td>52</td>
+            <td>52</td>
+            <td>1300</td>
+            <td>952</td>
+            <td>12749</td>
+            <td>38200</td>
+            <td>12.7</td>
+            <td>48657</td>
+            <td>46603</td>
+            <td>82523</td>
+            <td>93875</td>
+            <td>73.5</td>
+            <td>73.5</td>
+            <td>1963</td>
+          </tr>
+          <tr class="collapse5 hide">
+            <td>RSM Rails Fin. (Incl C.R)</td>
+            <td>52</td>
+            <td>52</td>
+            <td>1300</td>
+            <td>952</td>
+            <td>12749</td>
+            <td>38200</td>
+            <td>12.7</td>
+            <td>48657</td>
+            <td>45322</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+          <tr class="collapse5 hide">
+            <td>RSM Stris Fin.</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>1281</td>
+            <td>33640</td>
+            <td>61877</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="collapse5 hide">
+            <td>RSM Stris Fin.</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>47736</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>URM Rails Fin.</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>47736</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Total Rails Fin.</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>47736</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr id="expand6">
+            <td><strong style="color: green">+</strong> Plates Finished</td>
+            <td>52</td>
+            <td>52</td>
+            <td>1300</td>
+            <td>952</td>
+            <td>12749</td>
+            <td>38200</td>
+            <td>12.7</td>
+            <td>48657</td>
+            <td>46603</td>
+            <td>82523</td>
+            <td>93875</td>
+            <td>73.5</td>
+            <td>73.5</td>
+            <td>1963</td>
+          </tr>
+          <tr class="collapse6 hide">
+            <td>Merch. Prod</td>
+            <td>52</td>
+            <td>52</td>
+            <td>1300</td>
+            <td>952</td>
+            <td>12749</td>
+            <td>38200</td>
+            <td>12.7</td>
+            <td>48657</td>
+            <td>45322</td>
+            <td>677487</td>
+            <td>759729</td>
+            <td>98.9</td>
+            <td>98.8</td>
+            <td>23879</td>
+          </tr>
+          <tr class="collapse6 hide">
+            <td>Wire Prod</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>1281</td>
+            <td>33640</td>
+            <td>61877</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="collapse6 hide">
+            <td>BRM Prod</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>47736</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+          <td>Total Semis</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>47736</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr class="table-title">
+            <th colspan="100%">प्रेषण / Dispatch</th>
+          </tr>
+          <tr class="table-col-title">
+            <th></th>
+            <th>Asking Rate[T]</th>
+            <th>On Date[T]</th>
+            <th>To Date[T]</th>
+            <th>Monthly Rate[T]</th>
+            <th>CMO Plan[T]</th>
+            <th>FF(%)</th>
+            <th>Stock On_Date[T]</th>
+            <th>Stock On 1<sup>st</sup>[T]</th>
+            <th>Stock On 1<sup>st</sup>April[T]</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="collapsible-row" data-toggle="collapse" data-target="#row1-details">
+            <td><b> Total Semis </b><img class="myImage" style="cursor: pointer;" src="images/expand_icon.png" height="8rem"></td>
+          </tr>
+
+          <tr id="row1-details" class="collapse details">
+            <td colspan="1">SMS2</td>
+            <td>Bloom</td>
+            <td>Slabs</td>
+         </tr>
+         <tr id="row1-details" class="collapse details">
+            <td colspan="1">SMS3</td>
+            <td>Bloom</td>
+            <td>Billets</td>
+         </tr>
+         <tr id="row1-details" class="collapse details">
+            <td colspan="1">RSM</td>
+            <td>Bloom</td>
+            <td>Billets</td>
+         </tr>
+
+          
+         <tr class="collapsible-row" data-toggle="collapse" data-target="#row2-details">
+            <td><b> Finished Steel </b><img class="myImage" style="cursor: pointer;" src="images/expand_icon.png" height="8rem"></td>
+          </tr>
+          <tr id="row2-details" class="collapse details">
+            <td>WRM</td>
+            <td>3205</td>
+            <td>1639</td>
+            <td>33885</td>
+            <td>37516</td>
+            <td>43000</td>
+            <td>86</td>
+            <td>9665</td>
+            <td>6788</td>
+            <td>6068</td>
+          </tr>
+          <tr id="row2-details" class="collapse details">
+            <td>Bar Mill</td>
+            <td>376</td>
+            <td>2535</td>
+            <td>69125</td>
+            <td>223156</td>
+            <td>223635</td>
+            <td>225000</td>
+            <td>100</td>
+            <td>99</td>
+            <td>225092</td>
+          </tr>
+          <tr id="row2-details" class="collapse details">
+            <td>USM</td>
+            <td>5530</td>
+            <td>5102</td>
+            <td>153411</td>
+            <td>169848</td>
+            <td>168420</td>
+            <td>170000</td>
+            <td>101</td>
+            <td>100</td>
+            <td>175857</td>
+          </tr>
+          <tr id="row2-details" class="collapse details">
+            <td>Finished Steel</td>
+            <td>2284</td>
+            <td>2533</td>
+            <td>48149</td>
+            <td>53308</td>
+            <td>55215</td>
+            <td>55000</td>
+            <td>97</td>
+            <td>97</td>
+            <td>56321</td>
+          </tr>
+          <tr>
+
+
+          
+         <tr class="collapsible-row" data-toggle="collapse" data-target="#row3-details">
+            <td><b> Salable Steel </b><img class="myImage" style="cursor: pointer;" src="images/expand_icon.png" height="8rem"></td>
+          </tr>
+          <tr id="row3-details" class="collapse details">
+            <td>Saleable Steel</td>
+            <td>1927</td>
+            <td>2620</td>
+            <td>69218</td>
+            <td>76634</td>
+            <td>68000</td>
+            <td>75000</td>
+            <td>113</td>
+            <td>102</td>
+            <td>75582</td>
+          </tr>
+          <tr id="row3-details" class="collapse details">
+            <td>+Saleable-Semis</td>
+            <td>2079</td>
+            <td>1400</td>
+            <td>36762</td>
+            <td>40701</td>
+            <td>43500</td>
+            <td>43000</td>
+            <td style="color: green">94</td>
+            <td>95</td>
+            <td>46010</td>
+          </tr>
+
+
+          <tr>
+            <td colspan="7" style="font-weight: 700;">Stockyard Stock</td>
+            <td>60100</td>
+            <td>55800</td>
+            <td>86500</td>
+          </tr>
+          <tr>
+            <td colspan="7" style="font-weight: 700;">Total Stock</td>
+            <td>94278</td>
+            <td>89375</td>
+            <td>109006</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr class="table-title">
+            <th colspan="100%">तकनीकी आर्थिक मापदंड / TechnoEconomic Parameters</th>
+          </tr>
+          <tr class="table-col-title">
+            <th>Shop</th>
+            <th>Parameter</th>
+            <th>ABP</th>
+            <th>Till_Date</th>
+            <th>Shop</th>
+            <th>Parameter</th>
+            <th>ABP</th>
+            <th>Till_Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Coke Oven</td>
+            <td>Imported Coal in Blend-COB-10(%)</td>
+            <td>92</td>
+            <td style="color: green">90</td>
+            <td rowspan="2">SMS</td>
+            <td>TMI(KG/TCS)</td>
+            <td>1108</td>
+            <td>1101</td>
+          </tr>
+          <tr>
+            <td>Imported Coal in Blend-COB-11(%)</td>
+            <td>94</td>
+            <td style="color: green">92</td>
+            <td>Sp.Lime Cons(KG/TCS)</td>
+            <td>70</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <td rowspan="6">Blast Furnace</td>
+            <td>Coke Rate (KG/THM)</td>
+            <td>380</td>
+            <td style="color: red">393</td>
+            <td rowspan="8">Others</td>
+            <th colspan="3" class="table-col-title">Environmental parameters</th>
+          </tr>
+          <tr>
+            <td>Nut Coke Rate (KG / THM)</td>
+            <td>30</td>
+            <td style="color: red">37</td>
+            <th class="table-col-title">Parameter</th>
+            <th class="table-col-title">ABP</th>
+            <th class="table-col-title">Till Date</th>
+          </tr>
+          <tr>
+            <td>CDI Rate (KG / THM)</td>
+            <td>135</td>
+            <td style="color: red">122</td>
+            <td>Specific Power(KWH/TSS)</td>
+            <td>487</td>
+            <td>498</td>
+          </tr>
+          <tr>
+            <td>Fuel Rate (KG / THM)</td>
+            <td>545</td>
+            <td style="color: red">552</td>
+            <td>Specific Energy(Gcal)</td>
+            <td>5.92</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>BF Productivity (t/m2/day)</td>
+            <td>2.24</td>
+            <td style="color: red">2.24</td>
+            <td>Specific Water(M<sup>2</sup>/TCS)</td>
+            <td>3.3</td>
+            <td>2.78</td>
+          </tr>
+          <tr>
+            <td>O2 Enrichment(%)</td>
+            <td>0</td>
+            <td style="color: green">4.16</td>
+            <th class="table-col-title">Parameter</th>
+            <th class="table-col-title">ABP</th>
+            <th class="table-col-title">Prev. Month</th>
+          </tr>
+          <tr>
+            <th class="table-col-title">Shop</th>
+            <th class="table-col-title">Mill</th>
+            <th class="table-col-title">ABP</th>
+            <th class="table-col-title">On Date</th>
+            <td>LDO Consm(KL)</td>
+            <td>0</td>
+            <td>15.53</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>WRM</td>
+            <td>20</td>
+            <td>17.4</td>
+            <td>Specific Refractory(KG/TCS)</td>
+            <td>0</td>
+            <td>13.81</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr class="table-title">
+            <th colspan="100%">Circuit Wise Detention</th>
+          </tr>
+          <tr class="table-col-title">
+            <th colspan="3">Inward</th>
+            <th colspan="3">Outward</th>
+          </tr>
+          <tr class="table-col-title">
+            <th>Circuit</th>
+            <th>Norm</th>
+            <th>Rake Average Detention Hour</th>
+            <th>Circuit</th>
+            <th>Norm</th>
+            <th>Rake Average Detention Hour</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IOL(BOXN)</td>
+            <td>5</td>
+            <td>4</td>
+            <td>Steel</td>
+            <td>20</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>IOL(BOBS)</td>
+            <td>2</td>
+            <td>2</td>
+            <td>Granulated Slag</td>
+            <td>22</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>IOF(BOXN)</td>
+            <td>5</td>
+            <td>5</td>
+            <td>Scree&Debris</td>
+            <td>22</td>
+            <td>46</td>
+          </tr>
+          <tr>
+            <td>IOF(BOBS)</td>
+            <td>2</td>
+            <td>2</td>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td>IImported Coal</td>
+            <td>5/12</td>
+            <td>7</td>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td>Imported Coal</td>
+            <td>5/12</td>
+            <td>7</td>
+            <td colspan="3"></td>
+          </tr>          <tr>
+            <td>Imported Coal</td>
+            <td>5/12</td>
+            <td>7</td>
+            <td colspan="3"></td>
+          </tr>          <tr>
+            <td>Imported Coal</td>
+            <td>5/12</td>
+            <td>7</td>
+            <td colspan="3"></td>
+          </tr>          <tr>
+            <td>Imported Coal</td>
+            <td>5/12</td>
+            <td>7</td>
+            <td colspan="3"></td>
+          </tr>
+          <tr>
+            <td>Imported Coal</td>
+            <td>5/12</td>
+            <td>7</td>
+            <td colspan="3"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+    
+  </main>
+
+  <footer>
+    Developed by Computers &amp; Information Technology Department
+  </footer>
+
+  <script src="js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/cec8e0eed3.js" crossorigin="anonymous" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
